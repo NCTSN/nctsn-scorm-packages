@@ -20,6 +20,7 @@ var g_oPrintOptions = new Object();
 
 // LMS Support
 var g_bLMSPresent = false;
+var g_oInterfaceObject;
 
 if (g_bLMS)
 {
@@ -42,6 +43,7 @@ function WriteSwfObject(strSwfFile, nWidth, nHeight, strScale, strAlign, strQual
 	var strWidth = nWidth + "px";
 	var strHeight = nHeight + "px";
 	var strPublishSize = "&vPublishWidth=" + nWidth + "&vPublishHeight=" + nHeight;
+	g_oInterfaceObject = getInterfaceObject(strFlashVars);
 	
 	if (g_strResizeType === "fit")
 	{
@@ -57,6 +59,7 @@ function WriteSwfObject(strSwfFile, nWidth, nHeight, strScale, strAlign, strQual
 	
 	strFlashVars += "vHtmlContainer=true";
 	strFlashVars += "&TinCan=" + (g_bTinCan ? "true" : "false");
+	strFlashVars += "&vRise=" + (g_oInterfaceObject.isRise ? "true" : "false");
 	
 	if (navigator.userAgent.toLowerCase().indexOf("chrome") >= 0 && strWMode != "transparent")
 	{
@@ -84,6 +87,10 @@ function WriteSwfObject(strSwfFile, nWidth, nHeight, strScale, strAlign, strQual
 	
 	// Set the publish width and height
 	strFlashVars += strPublishSize;
+	
+	// Set the theme info
+	strFlashVars += "&vThemeName=" + g_strThemeName;
+	strFlashVars += "&vPreloaderColor=" + g_strPreloaderColor;
 	
 	// Set the LMS Resume data
 	if (g_bLMSPresent)
@@ -156,6 +163,39 @@ function WriteSwfObject(strSwfFile, nWidth, nHeight, strScale, strAlign, strQual
 	}
 	
 	setTimeout(SetPlayerFocus, 500);
+	
+	document.addEventListener("visibilitychange", UpdateVisibility);
+}
+
+function getInterfaceObject(strFlashVars) {
+	var settings = parseFlashVars(strFlashVars);
+	return window[settings.vInterfaceObject] || window.vInterfaceObject || {};
+}
+
+function parseFlashVars(strFlashVars) {
+	var settings = {};
+	var valuePairs = strFlashVars.split("&");
+	var length = valuePairs.length;
+	var i;
+	var valueSet;
+	
+	for (i = 0; i < length; i++) {
+		valueSet = valuePairs[i].split("=");
+		settings[valueSet[0]] = valueSet[1];
+	}
+	
+	return settings;
+}
+
+function UpdateVisibility(e) {
+	var player = GetPlayer();
+	if (player != null) {
+		if (document.hidden) {
+			player.TriggerPause();
+		} else {
+			player.TriggerPlay();
+		}
+	}
 }
 
 // Prevent Chrome from stretching the swf when resizing the browser
@@ -1537,6 +1577,14 @@ var g_bFatalError = false;
 function GetTinCanData()
 {
 	return decodeURIComponent(g_strQuery);
+}
+
+function SendRiseStatement(statement)
+{
+	if (g_oInterfaceObject.isRise && g_oInterfaceObject.LmsUpdate != null)
+	{
+		g_oInterfaceObject.LmsUpdate(JSON.parse(statement));
+	}
 }
 	
 function SendTinCanStatement(nMessageType, strMethod, strData, strUrl, arrHeaders)

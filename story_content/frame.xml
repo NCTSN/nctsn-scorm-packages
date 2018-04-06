@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns10111100001" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" outputtype="undefined" theme="classic">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npxnabnsnfns10111100001" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" outputtype="undefined" theme="classic">
   <layouts>
-    <layout name="npnxnanbsnfns10111100001" font="Open Sans" controllayout="npnxnanbsnfns10111100001" colorscheme="pxabnsnfns10111100001" string_table="pxabnsnfns10111100001" />
-    <layout name="pxabnsnfns10111100001" font="Open Sans" controllayout="pxabnsnfns10111100001" colorscheme="pxabnsnfns10111100001" string_table="pxabnsnfns10111100001" />
-    <layout name="npxnabnsnfns10111100001" font="Open Sans" controllayout="npxnabnsnfns10111100001" colorscheme="pxabnsnfns10111100001" string_table="pxabnsnfns10111100001" />
-    <layout name="npnxnanbnsnfns10111100001" font="Open Sans" controllayout="npnxnanbnsnfns10111100001" colorscheme="pxabnsnfns10111100001" string_table="pxabnsnfns10111100001" />
-    <layout name="pxabnsnfns10111100000" font="Open Sans" controllayout="pxabnsnfns10111100000" colorscheme="pxabnsnfns10111100001" string_table="pxabnsnfns10111100001" />
+    <layout name="npnxnanbsnfns10111100001" font="Open Sans" controllayout="npnxnanbsnfns10111100001" colorscheme="npxnabnsnfns10111100001" string_table="npxnabnsnfns10111100001" />
+    <layout name="pxabnsnfns10111100001" font="Open Sans" controllayout="pxabnsnfns10111100001" colorscheme="npxnabnsnfns10111100001" string_table="npxnabnsnfns10111100001" />
+    <layout name="npxnabnsnfns10111100001" font="Open Sans" controllayout="npxnabnsnfns10111100001" colorscheme="npxnabnsnfns10111100001" string_table="npxnabnsnfns10111100001" />
+    <layout name="npnxnanbnsnfns10111100001" font="Open Sans" controllayout="npnxnanbnsnfns10111100001" colorscheme="npxnabnsnfns10111100001" string_table="npxnabnsnfns10111100001" />
+    <layout name="pxabnsnfns10111100000" font="Open Sans" controllayout="pxabnsnfns10111100000" colorscheme="npxnabnsnfns10111100001" string_table="npxnabnsnfns10111100001" />
+    <layout name="pxnanbnsnfns10111100001" font="Open Sans" controllayout="pxnanbnsnfns10111100001" colorscheme="npxnabnsnfns10111100001" string_table="npxnabnsnfns10111100001" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -13,7 +14,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="Completing the Assessment" />
+              <option name="title_text" value="Engaging Families" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -59,7 +60,7 @@
           <option name="volume" value="false" />
           <option name="seekbar" value="true">
             <options>
-              <option name="readonly" value="false" />
+              <option name="readonly" value="true" />
             </options>
           </option>
           <option name="search" value="false" />
@@ -195,9 +196,32 @@
       </control>
       <control name="close_btn" enabled="false" />
     </control_layout>
+    <control_layout name="pxnanbnsnfns10111100001">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="true" />
+      <control name="replay" enabled="true" />
+      <control name="pauseplay" enabled="true" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="false" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="true" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="pxabnsnfns10111100001">
+    <colorscheme name="npxnabnsnfns10111100001">
       <color_group name="infopanel">
         <group_colors>
           <color name="link_text">
@@ -1114,7 +1138,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="pxabnsnfns10111100001">
+    <string_table name="npxnabnsnfns10111100001">
       <string id="check_include">Check to include</string>
       <string id="clear">Clear and return to Menu</string>
       <string id="close">Close</string>
@@ -1173,30 +1197,30 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.61lHJTzPMam" displaytext="Completing the Assessment" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.61lHJTzPMam.6J6jcRE4UPv" displaytext="Title" expand="false" type="slide" />
-            <slidelink slideid="_player.61lHJTzPMam.6n1LIthGOkD" displaytext="Introduction" expand="false" type="slide" />
-            <slidelink slideid="_player.61lHJTzPMam.69fP21IebPt" displaytext="Learning Objectives" expand="false" type="slide" />
-            <slidelink slideid="_player.61lHJTzPMam.6HvBIq6JNxz" displaytext="Trauma History" expand="false" type="slide" />
-            <slidelink slideid="_player.61lHJTzPMam.6qklsI2CVuE" displaytext="Knowledge Check" expand="false" type="slide" />
-            <slidelink slideid="_player.61lHJTzPMam.5nPE6VYJgAc" displaytext="Standardized Assessments" expand="false" type="slide" />
-            <slidelink slideid="_player.61lHJTzPMam.6hTbYkecG5f" displaytext="Knowledge Check" expand="false" type="slide" />
-            <slidelink slideid="_player.61lHJTzPMam.6UOXvnyVfiK" displaytext="Summary" expand="false" type="slide" />
-            <slidelink slideid="_player.61lHJTzPMam.5wZI8J0nmlH" displaytext="What can you do? 5" expand="false" type="slide" />
-            <slidelink slideid="_player.61lHJTzPMam.6Zuj4HYe1q4" displaytext="Start with Wellness 1" expand="false" type="slide" />
-            <slidelink slideid="_player.61lHJTzPMam.62K9jYECc07" displaytext="Put it into Practice 3" expand="false" type="slide" />
-          </links>
-        </slidelink>
+        <slidelink slideid="_player.6H3ebLBWEEA.6CWY3Yd3nfJ" displaytext="Title" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.6dUtYXPyPql" displaytext="Introduction" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.5cckCxlabZb" displaytext="Learning Objectives" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.6juBPG8H49r" displaytext="A Client's Perspective" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.6NoQPrfUQfy" displaytext="Preparing for a Session" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.5yllM4ubmxe" displaytext="During a Session" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.6bD9P6qED5m" displaytext="Demographics and Health" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.6CcQlnAavsc" displaytext="Domestic Environment and Education" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.6Mm0uaxJdR7" displaytext="Knowledge Check" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.6a1KU0hmidB" displaytext="Summary" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.6JEz7xNpeyV" displaytext="What can you do?" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.655bhAQ25Cf" displaytext="Start with Wellness" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.6Jha2V6ehPH" displaytext="Put it Into Practice" expand="false" type="slide" />
       </links>
     </outline>
   </nav_data>
   <resource_data description="&lt;p align='left'&gt;&lt;font face='Open Sans' style='font-size: 11px;' size='11' color='#444444'&gt;Here are some useful links and documents:&lt;/font&gt;&lt;/p&gt;">
     <resources>
-      <resource url="story_content/external_files/ResourcesForAnnasCase_17121200.pdf" image="story_content/5eFgSyOuVBM.png" title="Resources for Anna's Case" />
-      <resource url="story_content/external_files/Get POISED for Good Computer Habits.pdf" image="story_content/6n7k0Ai6qPa.png" title="Get POISED for Good Computer Habits" />
-      <resource url="story_content/external_files/Client Response Tool.pdf" image="story_content/6qGzq9VaqLX.png" title="Client Response Tool" />
-      <resource url="story_content/external_files/RangesForStandardizedAssessments_17012001.pdf" image="story_content/6IlEJNrhWrM.png" title="Ranges for Standardized Assessments" />
+      <resource url="story_content/external_files/TipSheetForMeasureAdministration_17012000.pdf" image="story_content/62ASFnjpX7z.png" title="Tip Sheet for Measure Administration" />
+      <resource url="story_content/external_files/TipSheetForProvidingFeedback_17012001.pdf" image="story_content/5Uv0a8BRsRe.png" title="Tip Sheet for Providing Feedback" />
+      <resource url="http://nctsn.org/products/sharing-power-tool-reflection" image="story_content/url.png" title="Sharing Power: A Tool for Reflection" />
+      <resource url="http://nctsn.org/products/whats-sharing-power-got-do-trauma-informed-practice" image="story_content/url.png" title="What's Sharing Power Got to Do with Trauma-Informed Practice" />
+      <resource url="story_content/external_files/SAMHSA Trauma-Informed Approach.pdf" image="story_content/6UhbB7lQUZ0.png" title="SAMHSA's Concept of Trauma and Guidance for a Trauma-Informed Approach" />
+      <resource url="http://nctsn.org/resources/topics/secondary-traumatic-stress" image="story_content/url.png" title="NCTSN Web Page on Secondary Traumatic Stress" />
     </resources>
   </resource_data>
   <transcript_data />
