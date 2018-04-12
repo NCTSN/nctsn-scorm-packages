@@ -14,7 +14,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="Engaging Families" />
+              <option name="title_text" value="Engaging Families 2" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -60,7 +60,7 @@
           <option name="volume" value="false" />
           <option name="seekbar" value="true">
             <options>
-              <option name="readonly" value="true" />
+              <option name="readonly" value="false" />
             </options>
           </option>
           <option name="search" value="false" />
@@ -1215,11 +1215,11 @@
   </nav_data>
   <resource_data description="&lt;p align='left'&gt;&lt;font face='Open Sans' style='font-size: 11px;' size='11' color='#444444'&gt;Here are some useful links and documents:&lt;/font&gt;&lt;/p&gt;">
     <resources>
-      <resource url="story_content/external_files/TipSheetForMeasureAdministration_17012000.pdf" image="story_content/62ASFnjpX7z.png" title="Tip Sheet for Measure Administration" />
-      <resource url="story_content/external_files/TipSheetForProvidingFeedback_17012001.pdf" image="story_content/5Uv0a8BRsRe.png" title="Tip Sheet for Providing Feedback" />
+      <resource url="story_content/external_files/TipSheetForMeasureAdministration_17012000.pdf" image="story_content/5eEACB5NhWQ.png" title="Tip Sheet for Measure Administration" />
+      <resource url="story_content/external_files/TipSheetForProvidingFeedback_17012001.pdf" image="story_content/5WNVGCXqh1z.png" title="Tip Sheet for Providing Feedback" />
       <resource url="http://nctsn.org/products/sharing-power-tool-reflection" image="story_content/url.png" title="Sharing Power: A Tool for Reflection" />
       <resource url="http://nctsn.org/products/whats-sharing-power-got-do-trauma-informed-practice" image="story_content/url.png" title="What's Sharing Power Got to Do with Trauma-Informed Practice" />
-      <resource url="story_content/external_files/SAMHSA Trauma-Informed Approach.pdf" image="story_content/6UhbB7lQUZ0.png" title="SAMHSA's Concept of Trauma and Guidance for a Trauma-Informed Approach" />
+      <resource url="story_content/external_files/SAMHSA Trauma-Informed Approach.pdf" image="story_content/5W0UPM5Xa1c.png" title="SAMHSA's Concept of Trauma and Guidance for a Trauma-Informed Approach" />
       <resource url="http://nctsn.org/resources/topics/secondary-traumatic-stress" image="story_content/url.png" title="NCTSN Web Page on Secondary Traumatic Stress" />
     </resources>
   </resource_data>
