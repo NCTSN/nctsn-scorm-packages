@@ -14,7 +14,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="Engaging Families 2" />
+              <option name="title_text" value="Engaging Families 3" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -1203,8 +1203,8 @@
         <slidelink slideid="_player.6H3ebLBWEEA.6juBPG8H49r" displaytext="A Client's Perspective" expand="false" type="slide" />
         <slidelink slideid="_player.6H3ebLBWEEA.6NoQPrfUQfy" displaytext="Preparing for a Session" expand="false" type="slide" />
         <slidelink slideid="_player.6H3ebLBWEEA.5yllM4ubmxe" displaytext="During a Session" expand="false" type="slide" />
-        <slidelink slideid="_player.6H3ebLBWEEA.6bD9P6qED5m" displaytext="Demographics and Health" expand="false" type="slide" />
-        <slidelink slideid="_player.6H3ebLBWEEA.6CcQlnAavsc" displaytext="Domestic Environment and Education" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.5gn1QK37KCN" displaytext="Demographics and Health" expand="false" type="slide" />
+        <slidelink slideid="_player.6H3ebLBWEEA.6GhJBLMNGxL" displaytext="Domestic Environment and Education" expand="false" type="slide" />
         <slidelink slideid="_player.6H3ebLBWEEA.6Mm0uaxJdR7" displaytext="Knowledge Check" expand="false" type="slide" />
         <slidelink slideid="_player.6H3ebLBWEEA.6a1KU0hmidB" displaytext="Summary" expand="false" type="slide" />
         <slidelink slideid="_player.6H3ebLBWEEA.6JEz7xNpeyV" displaytext="What can you do?" expand="false" type="slide" />
@@ -1215,11 +1215,11 @@
   </nav_data>
   <resource_data description="&lt;p align='left'&gt;&lt;font face='Open Sans' style='font-size: 11px;' size='11' color='#444444'&gt;Here are some useful links and documents:&lt;/font&gt;&lt;/p&gt;">
     <resources>
-      <resource url="story_content/external_files/TipSheetForMeasureAdministration_17012000.pdf" image="story_content/5eEACB5NhWQ.png" title="Tip Sheet for Measure Administration" />
-      <resource url="story_content/external_files/TipSheetForProvidingFeedback_17012001.pdf" image="story_content/5WNVGCXqh1z.png" title="Tip Sheet for Providing Feedback" />
+      <resource url="story_content/external_files/TipSheetForMeasureAdministration_17012000.pdf" image="story_content/6cXcBXnpnUF.png" title="Tip Sheet for Measure Administration" />
+      <resource url="story_content/external_files/TipSheetForProvidingFeedback_17012001.pdf" image="story_content/5mdFJEiQC9y.png" title="Tip Sheet for Providing Feedback" />
       <resource url="http://nctsn.org/products/sharing-power-tool-reflection" image="story_content/url.png" title="Sharing Power: A Tool for Reflection" />
       <resource url="http://nctsn.org/products/whats-sharing-power-got-do-trauma-informed-practice" image="story_content/url.png" title="What's Sharing Power Got to Do with Trauma-Informed Practice" />
-      <resource url="story_content/external_files/SAMHSA Trauma-Informed Approach.pdf" image="story_content/5W0UPM5Xa1c.png" title="SAMHSA's Concept of Trauma and Guidance for a Trauma-Informed Approach" />
+      <resource url="story_content/external_files/SAMHSA Trauma-Informed Approach.pdf" image="story_content/6p1AfUGUd5l.png" title="SAMHSA's Concept of Trauma and Guidance for a Trauma-Informed Approach" />
       <resource url="http://nctsn.org/resources/topics/secondary-traumatic-stress" image="story_content/url.png" title="NCTSN Web Page on Secondary Traumatic Stress" />
     </resources>
   </resource_data>
