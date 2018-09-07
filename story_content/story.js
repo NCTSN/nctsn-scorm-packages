@@ -1940,42 +1940,49 @@ var uuid = function (a){
 
 
 function DoOnLoad() {
-	var xhr = CreateXmlHttp();
-	var now = new Date();
-	// Stringify here since older IEs do not implement `JSON.stringify`
-	var data = '{"messageId":"' + uuid() + '",' +
-	  '"sentAt":"' + now.toISOString() + '",' +
-	  '"batch":[{' +
-	    '"event":"player_course_load",' +
-	    '"properties":{' +
-	      '"os":"' + [ bowser.osname, bowser.osversion ].join(' ') + '",' +
-	      '"browser":"' + [ bowser.name, bowser.version ].join(' ') + '",' +
-	      '"playerVersion":"' + window.g_strVersion + '",' +
-	      '"playerType":"Flash",' +
-	      '"lmsPresent":"' + window.g_bLMS + '",' +
-	      '"tinCanPresent":"' + window.g_bTinCan + '",' +
-	      '"aoSupport":"' + window.g_bAOSupport + '",' +
-	      '"publishSource":"' + window.g_strCreated + '"' +
-	    '},' +
-	    '"type":"track",' +
-	    '"messageId":"' + uuid() + '",' +
-	    '"timestamp":"' + now.toISOString() + '",' +
-	    '"context":{' +
-	      '"ip":"0.0.0.0",' +
-	      '"page":{' +
-		'"path":"/",' +
-		'"referrer":"",' +
-		'"search":"",' +
-		'"title":"",' +
-		'"url":"http://"' +
-	      '}' +
-	    '},' +
-	    '"integrations":{},' +
-	    '"anonymousId":"' + uuid() + '"' +
-	  '}]}';
+	if (!g_bSuppressAnalytics) {
+		var xhr = CreateXmlHttp();
+		var now = new Date();
+		var protocol = window.location.protocol;
+		// Stringify here since older IEs do not implement `JSON.stringify`
+		var data = '{"messageId":"' + uuid() + '",' +
+		  '"sentAt":"' + now.toISOString() + '",' +
+		  '"batch":[{' +
+			'"event":"player_course_load",' +
+			'"properties":{' +
+			  '"os":"' + [ bowser.osname, bowser.osversion ].join(' ') + '",' +
+			  '"browser":"' + [ bowser.name, bowser.version ].join(' ') + '",' +
+			  '"playerVersion":"' + window.g_strPlayerVersion + '",' +
+			  '"playerType":"Flash",' +
+			  '"lmsPresent":"' + window.g_bLMS + '",' +
+			  '"tinCanPresent":"' + window.g_bTinCan + '",' +
+			  '"aoSupport":"' + window.g_bAOSupport + '",' +
+			  '"publishSource":"' + window.g_strPublishSource + '",' +
+			  '"protocol":"' + protocol.substr(0, protocol.length - 1) + '",' + // remove the colon
+			  '"productChannel":"' + window.g_strProductChannel + '",' + 
+			  '"aid":"' + window.g_strAID + '",' + 
+			  '"cid":"' + window.g_strCID + '",' + 
+			'},' +
+			'"type":"track",' +
+			'"messageId":"' + uuid() + '",' +
+			'"timestamp":"' + now.toISOString() + '",' +
+			'"context":{' +
+			  '"ip":"0.0.0.0",' +
+			  '"page":{' +
+			'"path":"/",' +
+			'"referrer":"",' +
+			'"search":"",' +
+			'"title":"",' +
+			'"url":"http://"' +
+			  '}' +
+			'},' +
+			'"integrations":{},' +
+			'"anonymousId":"' + uuid() + '"' +
+		  '}]}';
 
-	xhr.open('POST', 'https://metrics.articulate.com/v1/import');
-	xhr.setRequestHeader('Content-Type', 'application/json');
-	xhr.send(data);
+		xhr.open('POST', 'https://metrics.articulate.com/v1/import');
+		xhr.setRequestHeader('Content-Type', 'application/json');
+		xhr.send(data);
+	}
 };
 

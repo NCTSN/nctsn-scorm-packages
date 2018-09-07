@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npxnabnsnfns10111100001" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns10111000001" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
   <layouts>
-    <layout name="npnxnanbsnfns10111100001" font="Open Sans" controllayout="npnxnanbsnfns10111100001" colorscheme="npxnabnsnfns10111100001" string_table="npxnabnsnfns10111100001" />
-    <layout name="pxabnsnfns10111100001" font="Open Sans" controllayout="pxabnsnfns10111100001" colorscheme="npxnabnsnfns10111100001" string_table="npxnabnsnfns10111100001" />
-    <layout name="npxnabnsnfns10111100001" font="Open Sans" controllayout="npxnabnsnfns10111100001" colorscheme="npxnabnsnfns10111100001" string_table="npxnabnsnfns10111100001" />
-    <layout name="npnxnanbnsnfns10111100001" font="Open Sans" controllayout="npnxnanbnsnfns10111100001" colorscheme="npxnabnsnfns10111100001" string_table="npxnabnsnfns10111100001" />
-    <layout name="pxabnsnfns10111100000" font="Open Sans" controllayout="pxabnsnfns10111100000" colorscheme="npxnabnsnfns10111100001" string_table="npxnabnsnfns10111100001" />
+    <layout name="npnxnanbsnfns10111000001" font="Open Sans" controllayout="npnxnanbsnfns10111000001" colorscheme="pxabnsnfns10111000001" string_table="pxabnsnfns10111000001" />
+    <layout name="pxabnsnfns10111000001" font="Open Sans" controllayout="pxabnsnfns10111000001" colorscheme="pxabnsnfns10111000001" string_table="pxabnsnfns10111000001" />
+    <layout name="npxnabnsnfns10111000001" font="Open Sans" controllayout="npxnabnsnfns10111000001" colorscheme="pxabnsnfns10111000001" string_table="pxabnsnfns10111000001" />
+    <layout name="npnxnanbnsnfns10111000001" font="Open Sans" controllayout="npnxnanbnsnfns10111000001" colorscheme="pxabnsnfns10111000001" string_table="pxabnsnfns10111000001" />
+    <layout name="pxabnsnfns10111000000" font="Open Sans" controllayout="pxabnsnfns10111000000" colorscheme="pxabnsnfns10111000001" string_table="pxabnsnfns10111000001" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="Completing the Assessment" />
+              <option name="title_text" value="Introduction: Welcome to the TOOLCIT" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -26,7 +26,7 @@
           </option>
           <optionlist name="tabs">
             <listitems>
-              <listitem name="resources" value="true" group="linkright" />
+              <listitem name="resources" value="false" group="linkright" />
               <listitem name="outline" value="true" group="sidebar" />
               <listitem name="glossary" value="false" group="sidebar" />
               <listitem name="transcript" value="false" group="sidebar" />
@@ -46,8 +46,8 @@
       </optiongroup>
       <optiongroup name="menuoptions">
         <options>
-          <option name="flow" value="restricted" />
-          <option name="wraplistitems" value="false" />
+          <option name="flow" value="free" />
+          <option name="wraplistitems" value="true" />
           <option name="tooltips" value="true" />
           <option name="autocollapse" value="true" />
           <option name="autonumber" value="false" />
@@ -59,13 +59,13 @@
           <option name="volume" value="false" />
           <option name="seekbar" value="true">
             <options>
-              <option name="readonly" value="false" />
+              <option name="readonly" value="true" />
             </options>
           </option>
           <option name="search" value="false" />
           <option name="pauseplay" value="true" />
           <option name="replay" value="true" />
-          <option name="closed_captions" value="true">
+          <option name="closed_captions" value="false">
             <options>
               <option name="font" value="Open Sans" />
             </options>
@@ -77,10 +77,17 @@
           <option name="bottombar_enabled" value="true" />
         </options>
       </optiongroup>
+      <optiongroup name="buttonoptions">
+        <options>
+          <option name="next" value="icon" />
+          <option name="previous" value="icon" />
+          <option name="submit" value="icon" />
+        </options>
+      </optiongroup>
     </optiongroups>
   </control_options>
   <control_layouts>
-    <control_layout name="npnxnanbsnfns10111100001">
+    <control_layout name="npnxnanbsnfns10111000001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -93,7 +100,7 @@
       <control name="submit" enabled="true" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -103,7 +110,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns10111100001">
+    <control_layout name="pxabnsnfns10111000001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -116,7 +123,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -126,7 +133,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npxnabnsnfns10111100001">
+    <control_layout name="npxnabnsnfns10111000001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -139,7 +146,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -149,7 +156,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npnxnanbnsnfns10111100001">
+    <control_layout name="npnxnanbnsnfns10111000001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -162,7 +169,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -172,7 +179,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns10111100000">
+    <control_layout name="pxabnsnfns10111000000">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -185,7 +192,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -197,7 +204,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="npxnabnsnfns10111100001">
+    <colorscheme name="pxabnsnfns10111000001">
       <color_group name="infopanel">
         <group_colors>
           <color name="link_text">
@@ -1105,7 +1112,7 @@
           <color name="htmlpage_bg_color">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0xF2F2F2" alpha="100" stop="0" />
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
               </colors>
             </fill>
           </color>
@@ -1114,7 +1121,8 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="npxnabnsnfns10111100001">
+    <string_table name="pxabnsnfns10111000001">
+      <string id="acc_active">active</string>
       <string id="check_include">Check to include</string>
       <string id="clear">Clear and return to Menu</string>
       <string id="close">Close</string>
@@ -1174,30 +1182,24 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.61lHJTzPMam.6J6jcRE4UPv" displaytext="Title" expand="false" type="slide" />
-        <slidelink slideid="_player.61lHJTzPMam.6n1LIthGOkD" displaytext="Introduction" expand="false" type="slide" />
-        <slidelink slideid="_player.61lHJTzPMam.69fP21IebPt" displaytext="Learning Objectives" expand="false" type="slide" />
-        <slidelink slideid="_player.61lHJTzPMam.6HvBIq6JNxz" displaytext="Support Partnership" expand="false" type="slide" />
-        <slidelink slideid="_player.61lHJTzPMam.6hTbYkecG5f" displaytext="Knowledge Check" expand="false" type="slide" />
-        <slidelink slideid="_player.61lHJTzPMam.5nPE6VYJgAc" displaytext="Explain Results" expand="false" type="slide" />
-        <slidelink slideid="_player.61lHJTzPMam.5bF5tsCJC3B" displaytext="Knowledge Check" expand="false" type="slide" />
-        <slidelink slideid="_player.61lHJTzPMam.6H4hFJOa8dW" displaytext="Create Hope" expand="false" type="slide" />
-        <slidelink slideid="_player.61lHJTzPMam.6dVumxHosCa" displaytext="Knowledge Check" expand="false" type="slide" />
-        <slidelink slideid="_player.61lHJTzPMam.6UOXvnyVfiK" displaytext="Summary" expand="false" type="slide" />
-        <slidelink slideid="_player.61lHJTzPMam.5wZI8J0nmlH" displaytext="What can you do?" expand="false" type="slide" />
-        <slidelink slideid="_player.61lHJTzPMam.6Zuj4HYe1q4" displaytext="Start with Wellness" expand="false" type="slide" />
-        <slidelink slideid="_player.61lHJTzPMam.62K9jYECc07" displaytext="Put it into Practice" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.6lEBHO8Y9cg" displaytext="Welcome to the NCTSN TOOLCIT" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.6Y6eL0oTQCy" displaytext="What is the TOOLCIT?" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.5rthOqmtbb7" displaytext="Purpose of the TOOLCIT" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.5jM1tXrf3Lg" displaytext="TOOLCIT Audience" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.6nlhPZ48s7I" displaytext="The NCCTS TOOLCIT - Where Are You Now" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.64RWySxmk1k" displaytext="Introductory Module Learning Objectives" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.5XKg7xzCW7U" displaytext="Background and Overview of NCCTS Collaboratives" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.5ieoxQ0HRsf" displaytext="Why is there a need for the TOOLCIT? " expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.6JeT88kCgVb" displaytext="Where did the TOOLCIT come from?" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.6ThvB643SxY" displaytext="(MISSING) How does the TOOLCIT work?" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.5rbRI3Y1W17" displaytext="(MISSING) Three Different Types of NCCTS Collaboratives" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.5UjQAF9hak8" displaytext="Learning Collaborative Focus of the TOOLCIT" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.64JzdL2j5IY" displaytext="Wrap-Up" expand="false" type="slide" />
+        <slidelink slideid="_player.5qsIvVGyGWY.5a7OC34l3ME" displaytext="Next Steps" expand="false" type="slide" />
       </links>
     </outline>
   </nav_data>
-  <resource_data description="&lt;p align='left'&gt;&lt;font face='Open Sans' style='font-size: 11px;' size='11' color='#444444'&gt;Here are some useful links and documents:&lt;/font&gt;&lt;/p&gt;">
-    <resources>
-      <resource url="story_content/external_files/ResourcesForAnnasCase_17121200.pdf" image="story_content/6Cymlm1fsS5.png" title="Resources for Anna's Case" />
-      <resource url="story_content/external_files/Get POISED for Good Computer Habits.pdf" image="story_content/5hVkK1q0Bdb.png" title="Get POISED for Good Computer Habits" />
-      <resource url="story_content/external_files/Client Response Tool.pdf" image="story_content/6Xf45GQRlSF.png" title="Client Response Tool" />
-      <resource url="story_content/external_files/RangesForStandardizedAssessments_17012001.pdf" image="story_content/6pKzdmK7RvI.png" title="Ranges for Standardized Assessments" />
-    </resources>
-  </resource_data>
+  <resource_data description="" />
   <transcript_data />
   <glossary_data />
 </bwFrame>
